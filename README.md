@@ -1,6 +1,6 @@
 ## Components
 
-### <Input />
+### `<Input />`
 
 #### API
 `onChange` handle value of input.
@@ -23,7 +23,7 @@
 
 
 
-### <Button />
+### `<Button />`
 
 #### API
 `text` button text.
@@ -32,7 +32,7 @@
 
 
 
-### <AutocompletePlaceSearch />
+### `<AutocompletePlaceSearch />`
 
 #### API
 `inputError` set error styling if it's `true`
@@ -41,7 +41,7 @@
 
 
 
-### <EditField />
+### `<EditField />`
 
 #### API
 `value` input value.
