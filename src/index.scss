@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./media/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./media/fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./media/fonts/Roboto-Italic.ttf);
+  font-style: italic;
+}
+
+// Color variables
+$darkGrey: #212121;
+$grey: #757575;
+$lightGrey: #bdbdbd;
+$veryLightGrey: #f5f5f5;
+$blueGrey: #607D8B;
+$lightBlue: #CFD8DC;
+$orange: #FFC107;
+$darkOrange: #f8ba01;
+$red: #F44336;
+
+// Elements colors
+$backgroundColor: #fafafa;
+$borderColor: $lightGrey;
+$secondaryText: $grey;
+$focusColor: $blueGrey;
+$callToActionButton: $orange;
+$callToActionButtonHover: $darkOrange;
+$errorColor: $red;
+$hoverBackground: $veryLightGrey;
+
+// Elements variables
+$borderRadius: 2px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $darkGrey;
+  font-family: Roboto, sans-serif;
+  background-color: $backgroundColor;
+}
+
+.app {
+  margin: 0 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadius;
+  box-shadow: 0 0 5px $borderColor;
+  padding: 20px 40px;
+}
+
+.form__button {
+  margin: 31px 10px 10px;
+}
+
+.list {
+  margin: 50px 0;
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      color: $secondaryText;
+  }
+
+  tr:first-child {
+    border-bottom: 1px solid $borderColor;
+  }
+
+  tr:nth-child(n+2):hover {
+      border: 1px solid $borderColor;
+      box-shadow: 0 0 5px $borderColor;
+      cursor: pointer;
+  }
+
+  th {
+    text-align: left;
+    padding: 0 0 16px 10px;
+    font-weight: normal;
+  }
+
+  td {
+    font-size: 14px;
+  }
+}
+
+.list__message {
+  margin-top: 50px;
+  text-align: center;
+  color: $secondaryText;
+}

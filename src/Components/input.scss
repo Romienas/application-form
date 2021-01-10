@@ -1,0 +1,38 @@
+@import '../index.scss';
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    label {
+        color: $secondaryText;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 5px;
+        color: $secondaryText;
+        border: 1px solid $borderColor;
+        border-radius: $borderRadius;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: 0 0 2px $focusColor;
+    }
+}
+
+.error {
+    input {
+        border: 1px solid $errorColor;
+        box-shadow: 0 0 2px $errorColor;
+    }
+}
+
+.input__errorText {
+    color: $errorColor;
+    font-size: 12px;
+    padding-top: 5px;
+}
