@@ -1,6 +1,6 @@
 ## Components
 
-### `<Input />`
+### <Input />
 
 #### API
 `onChange` handle value of input.
@@ -21,21 +21,27 @@
 
 `lebelOf` if `true` don't show label.
 
-### `<Button />`
+
+
+### <Button />
 
 #### API
 `text` button text.
 
 `onClick` handle click event.
 
-### `<AutocompletePlaceSearch />
+
+
+### <AutocompletePlaceSearch />
 
 #### API
 `inputError` set error styling if it's `true`
 
 `inputErrorText` add error text.
 
-### `<EditField />`
+
+
+### <EditField />
 
 #### API
 `value` input value.
@@ -48,4 +54,4 @@
 
 `elName` object element name.
 
-`onChange` handle looks changes in child component. Need to change state boolean.s
+`onChange` handle looks changes in child component. Need to change state boolean.
